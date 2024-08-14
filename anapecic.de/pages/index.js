@@ -1,7 +1,7 @@
 import Main from "./home";
 import styled from "styled-components";
 
-const Body = styled.section`
+const Section = styled.section`
   font-family: Carlito, sans-serif;
   background-color: var(--backgroundcolor);
   color: var(--textcolor);
@@ -14,8 +14,8 @@ const Body = styled.section`
 
 export default function Home() {
   return (
-    <Body>
+    <Section>
       <Main />
-    </Body>
+    </Section>
   );
 }

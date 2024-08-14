@@ -72,7 +72,7 @@ const Path7 = styled.path`
   stroke-opacity: 1;
 `;
 
-export function Arrow() {
+export default function Arrow() {
   return (
     <ArrowSvg
       width="7.7484922mm"

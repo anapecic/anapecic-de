@@ -9,15 +9,18 @@ export default function AboutMe() {
       </div>
       <p>
         Diving headfirst into the world of frontend web development at the
-        moment. Currently, I'm sharpening my skills at neuefische’s web
-        development bootcamp, and I'm all about creating sleek, responsive web
-        interfaces. With a solid background in digital marketing, large-scale
-        social media projects, and influencer management, I'm super excited to
-        bring that experience into tech. <br /> I'm passionate about using HTML,
-        CSS, and JavaScript as well as a number of frameworks (React.js,
-        Angular) to build awesome user experiences. If you're looking for
-        someone to craft dynamic and accessible websites, let's connect and make
-        something amazing together!
+        moment. Currently, I&apos;m sharpening my skills at neuefische&rsquo;s
+        web development bootcamp, and I&apos;m all about creating sleek,
+        responsive web interfaces. With a solid background in digital marketing,
+        large-scale social media projects, and influencer management, I&apos;m
+        super excited to bring that experience into tech.
+      </p>
+      <p>
+        I&apos;m passionate about using HTML, CSS, and JavaScript as well as a
+        number of frameworks (React.js, Angular) to build awesome user
+        experiences. If you&apos;re looking for someone to craft dynamic and
+        accessible websites, let&apos;s connect and make something amazing
+        together!
       </p>
     </div>
   );
