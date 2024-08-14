@@ -1,7 +1,6 @@
 import Header from "@/components/Header/Header";
 import Start from "@/components/Start/Start";
 import styled from "styled-components";
-//#übermich und main
 
 const MainWrapper = styled.main`
   grid-column-start: 2;
