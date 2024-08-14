@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 
 const circleAppear = keyframes`
   to {
@@ -8,9 +8,17 @@ const circleAppear = keyframes`
 
 const CircleSvg = styled.svg`
   position: absolute;
-  top: -50px;
-  right: -185px;
-  transform: scale(4.2);
+
+  ${({ position }) =>
+    position &&
+    css`
+      ${position}
+    `};
+  ${({ scale }) =>
+    scale &&
+    css`
+      ${scale}
+    `};
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   pointer-events: none;
@@ -52,9 +60,9 @@ const Path7 = styled.path`
   stroke-opacity: 1;
 `;
 
-export default function Circle() {
+export default function Circle({ position, scale }) {
   return (
-    <CircleSvg>
+    <CircleSvg position={position} scale={scale}>
       <GLayer id="layer1">
         <Path1
           d="m 101.85303,45.077808 c -2.3197,4.54465 -7.499381,6.380395 -10.556202,10.270895 -1.228231,1.563203 -2.481557,3.724883 -2.853026,5.706051 -0.213212,1.137137 -0.498436,2.268932 -0.570603,3.423632 -0.03258,0.521242 0.566618,1.910477 0.855906,2.28242 0.412853,0.530813 0.888542,1.023035 1.426514,1.426512 3.002102,2.251577 14.018161,-1.494647 17.118151,-2.567723 1.60146,-0.55435 7.33956,-2.746793 7.70317,-4.564841 0.51134,-2.556681 -3.91699,-4.744061 -5.42075,-5.420748 -3.39356,-1.527107 -7.17337,-2.551428 -10.841494,-3.138329 -5.82894,-0.93263 -11.774857,-1.997117 -17.688761,-1.997117"

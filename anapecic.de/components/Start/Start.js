@@ -59,7 +59,7 @@ export default function Start() {
     <>
       <HeadlineWrapper>
         <Headline>Hello, I am Ana!</Headline>
-        <Circle />
+        <Circle position="right: -185px;top: -50px;" scale="scale: 4.2" />
       </HeadlineWrapper>
       <Subtitle>
         Web Developer in Training and <br /> Social Media Marketing Expert
