@@ -6,19 +6,6 @@ const circleAppear = keyframes`
   }
 `;
 
-const CircleSvg = styled.svg`
-  position: absolute;
-  top: -50px;
-  right: -185px;
-  transform: scale(4.2);
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  pointer-events: none;
-  animation: ${circleAppear} 2s linear forwards infinite;
-  animation-delay: 1s;
-  viewbox: "0 0 45.723724 22.645947";
-`;
-
 const GLayer = styled.g``;
 
 const Path1 = styled.path`
@@ -50,6 +37,21 @@ const Path7 = styled.path`
   stroke: #9b4819;
   stroke-width: 1.15461;
   stroke-opacity: 1;
+`;
+
+const CircleSvg = styled.svg`
+  position: absolute;
+  top: 5px;
+  right: 0;
+  transform: scale(1.1);
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  pointer-events: none;
+  animation: ${circleAppear} 2s linear forwards infinite;
+  animation-delay: 1s;
+  width: 45.723724mm; /* Adjust based on your design */
+  height: 22.645947mm; /* Adjust based on your design */
+  viewbox: "0 0 45.723724 22.645947"; /* Adjust based on your design */
 `;
 
 export default function Circle() {

@@ -1,6 +1,7 @@
 import styled, { keyframes } from "styled-components";
-import Arrow from "../Svg/Arrow";
+import Arrow from "../Svg/Svg";
 import Circle from "../Svg/Circle";
+import Link from "next/link";
 
 const HeadlineWrapper = styled.div`
   position: relative;
@@ -63,8 +64,10 @@ export default function Start() {
       <Subtitle>
         Web Developer in Training and <br /> Social Media Marketing Expert
       </Subtitle>
-      <KontaktBtn href="#kontakt">Kontakt</KontaktBtn>
-      <Arrow />
+      <KontaktBtn href="/kontakt/">Kontakt</KontaktBtn>
+      <Link href="/about-me/">
+        <Arrow />
+      </Link>
     </>
   );
 }
