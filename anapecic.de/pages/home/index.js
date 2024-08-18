@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const MainWrapper = styled.main`
   grid-column-start: 2;
-  background-color: var(--backgroundcolor);
+  background-color: #f4f1e8;
   height: 100vh;
   font-family: Radley;
   display: flex;
