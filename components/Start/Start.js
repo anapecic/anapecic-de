@@ -65,7 +65,7 @@ export default function Start() {
         Web Developer in Training and <br /> Social Media Marketing Expert
       </Subtitle>
       <KontaktBtn href="/kontakt/">Kontakt</KontaktBtn>
-      <Link href="/about-me/">
+      <Link href="#about-me">
         <Arrow />
       </Link>
     </>

@@ -32,7 +32,7 @@ const AboutLinks = styled.div``;
 
 export default function AboutMe() {
   return (
-    <AboutWrapper id="about">
+    <AboutWrapper id="about-me">
       <AboutLinks>
         <Image
           src="/Ana und Patchy cute.jpg"
