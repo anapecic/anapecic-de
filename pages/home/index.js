@@ -1,3 +1,4 @@
+import AboutMe from "@/components/AboutMe/AboutMe";
 import Header from "@/components/Header/Header";
 import Start from "@/components/Start/Start";
 import styled from "styled-components";
@@ -12,7 +13,7 @@ const MainWrapper = styled.main`
   align-items: center;
   justify-content: center;
 `;
-
+//hier wird nur Header/Logo und Start gewrappt!
 export default function Main() {
   return (
     <MainWrapper>
