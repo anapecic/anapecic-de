@@ -6,4 +6,4 @@ const nextConfig = {
   },
 };
 
-export default withStyledComponents(nextConfig);
+export default nextConfig;
