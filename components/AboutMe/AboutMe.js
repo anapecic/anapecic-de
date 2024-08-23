@@ -5,19 +5,24 @@ import Image from "next/image";
 const AboutRechts = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: left;
-  justify-content: center;
+  @media (min-width: 700px) {
+    width: 50%;
+  }
 `;
 
 const StyledImage = styled(Image)`
   width: 100%;
+  max-width: 350px;
   height: auto;
   border-radius: 50% 50% 10% 10% / 33% 33% 0% 0%;
   padding-bottom: 1rem;
+  @media (min-width: 700px) {
+  }
 `;
 
 const AboutHeadline = styled.div`
   position: relative;
+  padding-top: 1rem;
 `;
 
 const AboutTitle = styled.h2`
@@ -30,14 +35,16 @@ const AboutWrapper = styled.section`
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 100px;
-  grid-column-start: 2;
   background: #314028;
   color: #f4f1e8;
   position: relative;
   align-items: center;
   justify-content: center;
   padding: 2rem 2rem;
-  max-width: 400px;
+  @media (min-width: 700px) {
+    flex-wrap: nowrap;
+    width: 90%;
+  }
 `;
 
 const StyledText = styled.p`
@@ -46,7 +53,15 @@ const StyledText = styled.p`
 `;
 
 const AboutLinks = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  @media (min-width: 700px) {
+    padding-right: 1rem;
+    width: auto;
+  }
 `;
 
 export default function AboutMe() {
@@ -65,7 +80,7 @@ export default function AboutMe() {
           />
         </AboutLinks>
         <AboutRechts>
-          <AboutHeadline className="about-headline">
+          <AboutHeadline>
             <AboutTitle>About Me</AboutTitle>
           </AboutHeadline>
           <StyledText>

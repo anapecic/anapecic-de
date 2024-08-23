@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const LogoWrapper = styled.header`
-  grid-column-start: 2;
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
