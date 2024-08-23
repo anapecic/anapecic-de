@@ -1,8 +1,7 @@
 import getAllProjects from "@/lib/projects";
 import styled from "styled-components";
 import { uid } from "uid";
-import Image from "next/image";
-import Link from "next/link";
+import Project from "../Project/Project";
 
 const StyledCardsSection = styled.div`
   display: flex;
@@ -26,92 +25,27 @@ const StyledH2 = styled.h2`
   text-decoration-color: #9b4819;
 `;
 
+const StyledIntro = styled.p`
+  max-width: 60%;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+`;
+
 export default function Projects() {
   const projects = getAllProjects();
   return (
     <StyledProjects id="projects">
       <StyledH2>My Projects</StyledH2>
+      <StyledIntro>
+        Here are some of my favorite projects I did in the last couple of
+        months. Most of it was done as exercises to keep learning, debugging and
+        celebrating small successes.
+      </StyledIntro>
       <StyledCardsSection>
         {projects.map((project) => (
           <Project key={uid()} project={project} />
         ))}
       </StyledCardsSection>
     </StyledProjects>
-  );
-}
-
-//start different file here
-const StyledProjectCard = styled.div`
-  margin: 1rem;
-  border-radius: 5px;
-  background: #314028;
-  color: #f4f1e8;
-  padding: 1rem;
-  width: 220px;
-`;
-
-const StyledTagsWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background: 314028;
-  gap: 5px;
-  padding: 0.5rem;
-`;
-
-const StyledTag = styled.div`
-  background: #f4f1e8;
-  color: #9b4819;
-  border: 1px solid #9b4819;
-  padding: 3px 5px;
-  border-radius: 5px;
-  font-size: 12px;
-`;
-
-const StyledCardTitle = styled.h3`
-  padding: 0;
-  margin: 0;
-  padding-top: 10px;
-`;
-
-const StyledImage = styled(Image)`
-  width: 100%;
-  height: auto;
-`;
-
-const StyledDesc = styled.p`
-  text-align: left;
-  font-size: 0.8rem;
-  margin: 0;
-  text-decoration: none;
-  line-height: 1.5;
-`;
-
-function Project({ project }) {
-  return (
-    <StyledProjectCard>
-      <Link href={project.deployment}>
-        <StyledImage
-          src={project.imageSource}
-          alt={project.name}
-          height={200}
-          width={200}
-        />
-      </Link>
-      <div>
-        <Link
-          href={project.deployment}
-          style={{ textDecoration: "none", color: "#f4f1e8" }}
-        >
-          <StyledCardTitle>{project.name}</StyledCardTitle>
-        </Link>
-        <StyledTagsWrapper>
-          {project.tags.map((tag) => (
-            <StyledTag key={uid()}>{tag}</StyledTag>
-          ))}
-        </StyledTagsWrapper>
-        <StyledDesc>{project.description}</StyledDesc>
-      </div>
-    </StyledProjectCard>
   );
 }
