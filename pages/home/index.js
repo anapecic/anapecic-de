@@ -4,14 +4,13 @@ import Start from "@/components/Start/Start";
 import styled from "styled-components";
 
 const MainWrapper = styled.main`
-  grid-column-start: 2;
   background-color: #f4f1e8;
-  height: 100vh;
   font-family: Radley;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 `;
 //hier wird nur Header/Logo und Start gewrappt!
 export default function Main() {

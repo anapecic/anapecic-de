@@ -1,3 +1,6 @@
 body {
   background-color: #f4f1e8;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }

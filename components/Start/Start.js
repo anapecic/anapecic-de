@@ -5,6 +5,7 @@ import Link from "next/link";
 
 const HeadlineWrapper = styled.div`
   position: relative;
+  text-align: center;
 `;
 
 const appearText = keyframes`0% {
@@ -19,10 +20,8 @@ const Headline = styled.h1`
   font-weight: normal;
   font-family: Radley;
   font-weight: normal;
-  font-size: 5rem;
+  font-size: 4rem;
   animation: ${appearText} 1s linear forwards 1;
-  overflow: hidden;
-  white-space: nowrap;
   display: inline;
 `;
 
@@ -59,13 +58,12 @@ export default function Start() {
     <>
       <HeadlineWrapper>
         <Headline>Hello, I am Ana!</Headline>
-        <Circle position="right: -185px;top: -50px;" scale="scale: 4.2" />
       </HeadlineWrapper>
       <Subtitle>
-        Web Developer in Training and <br /> Social Media Marketing Expert
+        Web Developer in Training and Social Media Marketing Expert
       </Subtitle>
       <KontaktBtn href="/kontakt/">Kontakt</KontaktBtn>
-      <Link href="#about-me">
+      <Link href="#projects">
         <Arrow />
       </Link>
     </>
