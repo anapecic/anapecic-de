@@ -1,6 +1,7 @@
 import Main from "./home";
 import styled from "styled-components";
 import AboutMe from "@/components/AboutMe/AboutMe";
+import Projects from "@/components/Projects/Projects";
 
 const Section = styled.section`
   font-family: sans-serif;
@@ -18,6 +19,7 @@ export default function Home() {
   return (
     <Section>
       <Main />
+      <Projects />
       <AboutMe />
     </Section>
   );

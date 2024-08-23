@@ -35,7 +35,7 @@ const AboutWrapper = styled.section`
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 100px;
-  background: #314028;
+  background: #9b4819;
   color: #f4f1e8;
   position: relative;
   align-items: center;
@@ -43,7 +43,7 @@ const AboutWrapper = styled.section`
   padding: 2rem 2rem;
   @media (min-width: 700px) {
     flex-wrap: nowrap;
-    width: 90%;
+    width: 93%;
   }
 `;
 
