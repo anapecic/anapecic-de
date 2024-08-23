@@ -3,6 +3,10 @@ import Arrow from "../Svg/Svg";
 import Circle from "../Svg/Circle";
 import Link from "next/link";
 
+// const StartWrapper = styled.div`
+//   grid-template-columns: auto minmax(0, 900px) auto;
+// `;
+
 const HeadlineWrapper = styled.div`
   position: relative;
 `;
@@ -27,7 +31,7 @@ const Headline = styled.h1`
 `;
 
 const Subtitle = styled.h2`
-  font-family: Carlito, sans-serif;
+  font-family: ans-serif;
   font-weight: normal;
   font-size: 1.5rem;
   text-align: center;
@@ -59,7 +63,7 @@ export default function Start() {
     <>
       <HeadlineWrapper>
         <Headline>Hello, I am Ana!</Headline>
-        <Circle position="right: -185px;top: -50px;" scale="scale: 4.2" />
+        {/* <Circle position="right: -185px;top: -50px;" scale="scale: 4.2" /> */}
       </HeadlineWrapper>
       <Subtitle>
         Web Developer in Training and <br /> Social Media Marketing Expert

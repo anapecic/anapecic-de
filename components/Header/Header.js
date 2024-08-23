@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const LogoWrapper = styled.header`
-  grid-column-start: 2;
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
@@ -27,7 +26,6 @@ const Char = styled.p`
 const Characters = styled.p`
   position: absolute;
   color: #f4f1e8;
-  font-family: Radley-italic;
   font-size: 3rem;
   top: -25px;
   left: 16px;

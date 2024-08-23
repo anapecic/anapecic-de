@@ -26,18 +26,17 @@ const AboutWrapper = styled.section`
   margin-bottom: 100px;
   margin-left: 30px;
   margin-right: 20px;
-  grid-column-start: 2;
   background: #314028;
   color: #f4f1e8;
   padding: 8rem 4rem;
   position: relative;
 `;
 
-const StyledBackground = styled.div`
-  width: 100px;
-  height: 100px;
-  background: #000000;
-`;
+// const StyledBackground = styled.div`
+//   width: 100px;
+//   height: 100px;
+//   background: #000000;
+// `;
 
 const StyledText = styled.p`
   line-height: 1.5;
