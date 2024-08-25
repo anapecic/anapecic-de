@@ -35,7 +35,7 @@ export default function Footer() {
       <StyledFlexRow>
         <SocialIcon
           platform="LinkedIn"
-          imgSrc="/Linkedin-n.png"
+          imgSrc="/LinkedIn-n.png"
           href="/"
           desc="Ana Pecic"
         />
