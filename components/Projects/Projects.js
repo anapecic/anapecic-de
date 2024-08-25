@@ -16,6 +16,7 @@ const StyledProjects = styled.div`
   align-content: center;
   text-align: center;
   padding-bottom: 100px;
+  background: #fff;
 `;
 
 const StyledH2 = styled.h2`
