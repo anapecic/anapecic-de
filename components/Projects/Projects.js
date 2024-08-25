@@ -6,7 +6,7 @@ import Project from "../Project/Project";
 const StyledCardsSection = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 `;
 
 const StyledProjects = styled.div`
@@ -15,15 +15,19 @@ const StyledProjects = styled.div`
   justify-content: center;
   align-content: center;
   text-align: center;
+  padding: 2rem;
   padding-bottom: 100px;
-  background: #fff;
+  border-radius: 10px;
+  background: #778da9;
+  width: 93vw;
+  margin-bottom: 120px;
 `;
 
 const StyledH2 = styled.h2`
   font-size: 2rem;
   text-decoration: underline dotted;
   text-decoration-thickness: 5px;
-  text-decoration-color: #9b4819;
+  text-decoration-color: #e0e1dd;
 `;
 
 const StyledIntro = styled.p`
