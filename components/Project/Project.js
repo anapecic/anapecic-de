@@ -22,9 +22,9 @@ const StyledTagsWrapper = styled.div`
 `;
 
 const StyledTag = styled.div`
-  background: #0d1b2a;
+  background: #415a77;
   color: #e0e1dd;
-  border: 1px solid #1b263b;
+  border: 1px solid #415a77;
   padding: 3px 5px;
   border-radius: 5px;
   font-size: 12px;
@@ -34,6 +34,7 @@ const StyledCardTitle = styled.h3`
   padding: 0;
   margin: 0;
   padding-top: 10px;
+  color: #1b263b;
 `;
 
 const StyledImage = styled(Image)`
@@ -65,7 +66,7 @@ export default function Project({ project }) {
       <div>
         <Link
           href={project.deployment}
-          style={{ textDecoration: "none", color: "#0D1B2A" }}
+          style={{ textDecoration: "none", color: "#415A77" }}
         >
           <StyledCardTitle>{project.name}</StyledCardTitle>
         </Link>

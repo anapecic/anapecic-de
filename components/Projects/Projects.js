@@ -19,7 +19,7 @@ const StyledProjects = styled.div`
   padding-bottom: 100px;
   border-radius: 10px;
   background: #778da9;
-  width: 93vw;
+  width: 100%;
   margin-bottom: 120px;
 `;
 
@@ -28,6 +28,7 @@ const StyledH2 = styled.h2`
   text-decoration: underline dotted;
   text-decoration-thickness: 5px;
   text-decoration-color: #e0e1dd;
+  color: #0d1b2a;
 `;
 
 const StyledIntro = styled.p`
