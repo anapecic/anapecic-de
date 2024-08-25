@@ -15,12 +15,11 @@ const StyledProjects = styled.div`
   justify-content: center;
   align-content: center;
   text-align: center;
-  padding: 2rem;
   padding-bottom: 100px;
-  border-radius: 10px;
-  background: #778da9;
+  background: #fff;
   width: 100%;
   margin-bottom: 120px;
+  padding-top: 50px;
 `;
 
 const StyledH2 = styled.h2`
@@ -28,7 +27,7 @@ const StyledH2 = styled.h2`
   text-decoration: underline dotted;
   text-decoration-thickness: 5px;
   text-decoration-color: #e0e1dd;
-  color: #0d1b2a;
+  color: #415a77;
 `;
 
 const StyledIntro = styled.p`

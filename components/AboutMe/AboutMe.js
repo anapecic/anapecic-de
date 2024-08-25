@@ -27,7 +27,7 @@ const AboutHeadline = styled.div`
 
 const AboutTitle = styled.h2`
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: bold;
   margin: 0;
   color: #1b263b;
 `;
