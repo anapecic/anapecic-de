@@ -36,19 +36,19 @@ export default function Footer() {
         <SocialIcon
           platform="LinkedIn"
           imgSrc="/LinkedIn-n.png"
-          href="/"
+          href="https://www.linkedin.com/in/ana-pecic/"
           desc="Ana Pecic"
         />
         <SocialIcon
           platform="Xing"
           imgSrc="/xing-n.png"
-          href="/"
+          href="https://www.xing.com/profile/Ana_Pecic/web_profiles"
           desc="Ana Pecic"
         />
         <SocialIcon
           platform="Github"
           imgSrc="/github-n.png"
-          href="/"
+          href="https://github.com/anapecic"
           desc="anapecic"
         />
         <StyledLink href="/impressum" style={{ fontSize: "14px" }}>
