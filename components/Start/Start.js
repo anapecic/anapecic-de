@@ -23,6 +23,7 @@ const Headline = styled.h1`
   font-size: 4rem;
   animation: ${appearText} 1s linear forwards 1;
   display: inline;
+  color: #0d1b2a;
 `;
 
 const Subtitle = styled.h2`
@@ -31,25 +32,26 @@ const Subtitle = styled.h2`
   font-size: 1.5rem;
   text-align: center;
   width: 70%;
+  color: #0d1b2a;
 `;
 
 const KontaktBtn = styled.a`
   align-self: center;
   text-decoration: none;
-  border: 2px solid #9b4819;
-  background-color: #f5f9fa;
+  border: 2px solid #0d1b2a;
+  background-color: #e0e1dd;
   border-radius: 50px;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: #9b4819;
+  color: #0d1b2a;
   font-weight: bold;
   font-family: SF, sans-serif;
 
   &:hover {
-    background-color: #9b4819;
-    color: #f5f9fa;
+    background-color: #0d1b2a;
+    color: #e0e1dd;
   }
 `;
 

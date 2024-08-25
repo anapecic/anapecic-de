@@ -29,7 +29,7 @@ const AboutTitle = styled.h2`
   font-size: 2rem;
   font-weight: normal;
   margin: 0;
-  color: #9b4819;
+  color: #1b263b;
 `;
 
 const AboutWrapper = styled.section`

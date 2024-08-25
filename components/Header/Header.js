@@ -7,12 +7,12 @@ const LogoWrapper = styled.header`
 `;
 
 const LogoOutline = styled.div`
-  border: 3px solid #9b4819;
+  border: 3px solid #0d1b2a;
   border-radius: 50%;
 `;
 
 const LogoMain = styled.div`
-  background-color: #9b4819;
+  background-color: #0d1b2a;
   padding: 0.4rem 2.5rem;
   border-radius: 50%;
   margin: 2px;
@@ -20,7 +20,7 @@ const LogoMain = styled.div`
 `;
 
 const Char = styled.p`
-  color: #9b4819;
+  color: #0d1b2a;
 `;
 
 const Characters = styled.p`

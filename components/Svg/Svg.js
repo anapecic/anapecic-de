@@ -67,7 +67,7 @@ const Path7 = styled.path`
   fill: none;
   fill-opacity: 0.262948;
   fill-rule: evenodd;
-  stroke: #314028;
+  stroke: #415a77;
   stroke-width: 1.15461;
   stroke-opacity: 1;
 `;
@@ -87,7 +87,7 @@ export default function Arrow() {
             fill: "none",
             fillOpacity: 0.262948,
             fillRule: "evenodd",
-            stroke: "#9b4819",
+            stroke: "#0D1B2A",
             strokeWidth: "0.799999",
           }}
           d="m 166.61671,146.07493 c 0.2853,8.17867 0.53523,16.35866 0.85591,24.53602 0.46034,11.73857 0.21546,-4.84861 0.57061,12.55331 0.46009,22.5445 -4.39932,-8.27377 -5.13545,-8.27377 -0.21201,0 2.92243,8.84438 4.27954,8.84438 4.92106,0 1.75355,-12.44179 0.2853,3.70893"
@@ -98,7 +98,7 @@ export default function Arrow() {
             fill: "none",
             fillOpacity: 0.262948,
             fillRule: "evenodd",
-            stroke: "#9b4819",
+            stroke: "#415A77",
             strokeWidth: "0.799999",
           }}
           d="m 215.68876,282.16426 -0.2853,-1.1412"

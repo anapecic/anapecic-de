@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const StyledProjectCard = styled.div`
   margin: 1rem;
-  border-radius: 5px;
-  background: #314028;
-  color: #f4f1e8;
+  border-radius: 10px;
+  background: #e0e1dd;
+  color: #0d1b2a;
   padding: 1rem;
   width: 220px;
 `;
@@ -16,15 +16,15 @@ const StyledTagsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: 314028;
+  background: #e0e1dd;
   gap: 5px;
   padding: 0.5rem;
 `;
 
 const StyledTag = styled.div`
-  background: #f4f1e8;
-  color: #9b4819;
-  border: 1px solid #9b4819;
+  background: #0d1b2a;
+  color: #e0e1dd;
+  border: 1px solid #1b263b;
   padding: 3px 5px;
   border-radius: 5px;
   font-size: 12px;
@@ -65,7 +65,7 @@ export default function Project({ project }) {
       <div>
         <Link
           href={project.deployment}
-          style={{ textDecoration: "none", color: "#f4f1e8" }}
+          style={{ textDecoration: "none", color: "#0D1B2A" }}
         >
           <StyledCardTitle>{project.name}</StyledCardTitle>
         </Link>
