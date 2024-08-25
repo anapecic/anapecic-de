@@ -6,7 +6,7 @@ import Image from "next/image";
 const StyledProjectCard = styled.div`
   margin: 1rem;
   border-radius: 10px;
-  background: #e0e1dd;
+  background: #f5f5f5;
   color: #0d1b2a;
   padding: 1rem;
   width: 220px;
@@ -16,7 +16,7 @@ const StyledTagsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: #e0e1dd;
+  background: #f5f5f5;
   gap: 5px;
   padding: 0.5rem;
 `;
