@@ -29,14 +29,14 @@ const AboutTitle = styled.h2`
   font-size: 2rem;
   font-weight: normal;
   margin: 0;
+  color: #9b4819;
 `;
 
 const AboutWrapper = styled.section`
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 100px;
-  background: #9b4819;
-  color: #f4f1e8;
+  color: black;
   position: relative;
   align-items: center;
   justify-content: center;
