@@ -64,7 +64,7 @@ export default function Start() {
       <Subtitle>
         Web Developer in Training and Social Media Marketing Expert
       </Subtitle>
-      <KontaktBtn href="/kontakt/">Kontakt</KontaktBtn>
+      <KontaktBtn href="mailto:ana.pecic97@gmail.com">Kontakt</KontaktBtn>
       <Link href="#projects">
         <Arrow />
       </Link>
