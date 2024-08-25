@@ -3,18 +3,18 @@ import Link from "next/link";
 import styled from "styled-components";
 
 const StyledFooterWrapper = styled.div`
-  background: #314028;
-  color: #f4f1e8;
+  background: #fff;
+  color: #9b4819;
   width: 100%;
   display: flex;
   justify-content: space-between;
 `;
 
-const StyledFlexColumn = styled.div`
-  display: flex;
-  padding: 1rem;
-  flex-direction: column;
-`;
+// const StyledFlexColumn = styled.div`
+//   display: flex;
+//   padding: 1rem;
+//   flex-direction: column;
+// `;
 
 const StyledFlexRow = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ const StyledFlexRow = styled.div`
 `;
 
 // const StyledLink = styled(Link)`
-//   color: black;
+//   color: 9b4819;
 //   text-decoration: none;
 //   padding-right: 1rem;
 // `;
@@ -51,19 +51,19 @@ export default function Footer() {
         </p> */}
         <SocialIcon
           platform="LinkedIn"
-          imgSrc="/linkedin-n.png"
+          imgSrc="/linkedin.png"
           href="/"
           desc="Ana Pecic"
         />
         <SocialIcon
           platform="Xing"
-          imgSrc="/xing-n.png"
+          imgSrc="/xing.png"
           href="/"
           desc="Ana Pecic"
         />
         <SocialIcon
           platform="Github"
-          imgSrc="/github-n.png"
+          imgSrc="/github.png"
           href="/"
           desc="anapecic"
         />
@@ -79,10 +79,14 @@ const StyledSocialP = styled.p`
   padding: 0;
   font-size: 14px;
   padding-left: 5px;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
 `;
 
 const StyledLink = styled(Link)`
-  color: #f4f1e8;
+  color: #9b4819;
   text-decoration: none;
   padding-right: 1rem;
 
@@ -94,13 +98,13 @@ const StyledLink = styled(Link)`
 function SocialIcon({ platform, imgSrc, href, desc }) {
   return (
     <StyledLink href={href} style={{ display: "flex" }}>
-      <Image
+      {/* <Image
         width={15}
         height={15}
         alt={`Social Icon ${platform}`}
         src={imgSrc}
-      />
-      <StyledSocialP>{desc}</StyledSocialP>
+      /> */}
+      <StyledSocialP>{platform}</StyledSocialP>
     </StyledLink>
   );
 }

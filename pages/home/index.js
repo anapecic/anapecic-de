@@ -4,7 +4,7 @@ import Start from "@/components/Start/Start";
 import styled from "styled-components";
 
 const MainWrapper = styled.main`
-  background-color: #f4f1e8;
+  background-color: #f5f9fa;
   font-family: Radley;
   display: flex;
   flex-direction: column;

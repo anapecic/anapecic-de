@@ -67,7 +67,7 @@ const Path7 = styled.path`
   fill: none;
   fill-opacity: 0.262948;
   fill-rule: evenodd;
-  stroke: #9b4819;
+  stroke: #314028;
   stroke-width: 1.15461;
   stroke-opacity: 1;
 `;

@@ -37,7 +37,7 @@ const KontaktBtn = styled.a`
   align-self: center;
   text-decoration: none;
   border: 2px solid #9b4819;
-  background-color: #f4f1e8;
+  background-color: #f5f9fa;
   border-radius: 50px;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
@@ -49,7 +49,7 @@ const KontaktBtn = styled.a`
 
   &:hover {
     background-color: #9b4819;
-    color: #f4f1e8;
+    color: #f5f9fa;
   }
 `;
 
