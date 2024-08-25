@@ -39,7 +39,7 @@ const KontaktBtn = styled.a`
   align-self: center;
   text-decoration: none;
   border: 2px solid #0d1b2a;
-  background-color: #e0e1dd;
+  background-color: #f5f5f5;
   border-radius: 50px;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
