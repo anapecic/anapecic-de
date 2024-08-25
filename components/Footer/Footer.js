@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
 import styled from "styled-components";
+import SocialIcon from "../SocialIcon/SocialIcon";
+import Link from "next/link";
 
 const StyledFooterWrapper = styled.div`
   background: #778da9;
@@ -23,11 +23,11 @@ const StyledFlexRow = styled.div`
   width: 100%;
 `;
 
-// const StyledLink = styled(Link)`
-//   color: #e0e1dd;
-//   text-decoration: none;
-//   padding-right: 1rem;
-// `;
+const StyledLink = styled(Link)`
+  color: #e0e1dd;
+  text-decoration: none;
+  padding-right: 1rem;
+`;
 
 export default function Footer() {
   return (
@@ -59,42 +59,5 @@ export default function Footer() {
         </StyledLink>
       </StyledFlexRow>
     </StyledFooterWrapper>
-  );
-}
-
-//move to different file
-
-const StyledSocialP = styled.p`
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  padding-left: 5px;
-
-  @media (max-width: 700px) {
-    display: none;
-  }
-`;
-
-const StyledLink = styled(Link)`
-  color: #e0e1dd;
-  text-decoration: none;
-  padding-right: 1rem;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
-
-function SocialIcon({ platform, imgSrc, href, desc }) {
-  return (
-    <StyledLink href={href} style={{ display: "flex" }}>
-      <Image
-        width={15}
-        height={15}
-        alt={`Social Icon ${platform}`}
-        src={imgSrc}
-      />
-      <StyledSocialP>{desc}</StyledSocialP>
-    </StyledLink>
   );
 }

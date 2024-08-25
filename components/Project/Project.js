@@ -9,7 +9,7 @@ const StyledProjectCard = styled.div`
   background: #f5f5f5;
   color: #0d1b2a;
   padding: 1rem;
-  width: 220px;
+  width: 210px;
 `;
 
 const StyledTagsWrapper = styled.div`
