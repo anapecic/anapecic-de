@@ -26,8 +26,8 @@ const StyledH2 = styled.h2`
   font-size: 2rem;
   text-decoration: underline dotted;
   text-decoration-thickness: 5px;
-  text-decoration-color: #e0e1dd;
-  color: #415a77;
+  text-decoration-color: #778da9;
+  color: #0d1b2a;
 `;
 
 const StyledIntro = styled.p`
