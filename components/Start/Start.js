@@ -49,12 +49,13 @@ const Headline = styled.h1`
   max-width: 0;
   width: 100%;
   overflow: hidden;
-  white-space: normal;
+  white-space: nowrap;
 
   @media (max-width: 750px) {
     animation: none;
     border: none;
     max-width: 100%;
+    white-space: normal;
   }
 `;
 
