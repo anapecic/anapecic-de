@@ -16,9 +16,8 @@ const appearText = keyframes`0% {
   }`;
 
 const Headline = styled.h1`
-  font-family: Carlito, sans-serif;
+  font-family: serif;
   font-weight: normal;
-  font-family: Radley;
   font-weight: normal;
   font-size: 4rem;
   animation: ${appearText} 1s linear forwards 1;
@@ -27,7 +26,7 @@ const Headline = styled.h1`
 `;
 
 const Subtitle = styled.h2`
-  font-family: Carlito, sans-serif;
+  font-family: sans-serif;
   font-weight: normal;
   font-size: 1.5rem;
   text-align: center;

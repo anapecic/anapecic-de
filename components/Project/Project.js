@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { uid } from "uid";
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 const StyledProjectCard = styled.div`
   margin: 1rem;
@@ -35,11 +36,33 @@ const StyledCardTitle = styled.h3`
   margin: 0;
   padding-top: 10px;
   color: #1b263b;
+
+  &:hover {
+    text-decoration: underline dotted;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #778da9;
+  }
+`;
+
+const StyledImageBox = styled.div`
+  position: relative;
 `;
 
 const StyledImage = styled(Image)`
   width: 100%;
   height: auto;
+
+  &:hover {
+    filter: brightness(50%);
+  }
+`;
+
+const StyledHoverIcon = styled.div`
+  color: #e0e1dd;
+  position: absolute;
+  top: 90px;
+  left: 90px;
+  font-weight: bold;
 `;
 
 const StyledDesc = styled.p`
@@ -53,15 +76,32 @@ const StyledDesc = styled.p`
 //add github logo and link it
 
 export default function Project({ project }) {
+  const [hover, setHover] = useState(false);
+
   return (
     <StyledProjectCard>
       <Link href={project.deployment}>
-        <StyledImage
-          src={project.imageSource}
-          alt={project.name}
-          height={200}
-          width={200}
-        />
+        <StyledImageBox
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}
+        >
+          <StyledImage
+            src={project.imageSource}
+            alt={project.name}
+            height={200}
+            width={200}
+          />
+          {hover ? (
+            <StyledHoverIcon>
+              <Image
+                src="/external.svg"
+                alt="icon for external page"
+                width={30}
+                height={30}
+              />
+            </StyledHoverIcon>
+          ) : null}
+        </StyledImageBox>
       </Link>
       <div>
         <Link
