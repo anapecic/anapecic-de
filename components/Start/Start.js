@@ -9,11 +9,12 @@ const HeadlineWrapper = styled.div`
 
 const appearText = keyframes`
   0% {
-    width: 0%;
+    max-width: 0;
   }
   100% {
-    width: 100%;
-  }`;
+    max-width: 100%;
+  }
+`;
 
 const blinkCaret = keyframes`
   0%, 100% {
@@ -39,16 +40,22 @@ const Headline = styled.h1`
   font-weight: normal;
   font-size: 4rem;
   animation: ${appearText} 2s steps(30, end) forwards,
-    ${blinkCaret} 0.75s step-end 2s 4, ${removeCaret} 1s step-end 5s forwards; /* New animation to remove caret */
-
+    ${blinkCaret} 0.75s step-end 2s 4, ${removeCaret} 1s step-end 5s forwards;
   border-right: 2px solid black;
   margin: 0;
   display: inline;
   color: #0d1b2a;
   display: inline-block;
-  width: 0;
+  max-width: 0;
+  width: 100%;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: normal;
+
+  @media (max-width: 750px) {
+    animation: none;
+    border: none;
+    max-width: 100%;
+  }
 `;
 
 const Subtitle = styled.h2`

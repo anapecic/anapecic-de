@@ -9,12 +9,6 @@ const StyledFooterWrapper = styled.div`
   display: flex;
 `;
 
-// const StyledFlexColumn = styled.div`
-//   display: flex;
-//   padding: 1rem;
-//   flex-direction: column;
-// `;
-
 const StyledFlexRow = styled.div`
   display: flex;
   padding: 1rem;
