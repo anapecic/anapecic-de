@@ -1,6 +1,5 @@
 import styled, { keyframes } from "styled-components";
 import Arrow from "../Svg/Svg";
-import Circle from "../Svg/Circle";
 import Link from "next/link";
 
 const HeadlineWrapper = styled.div`
@@ -8,21 +7,48 @@ const HeadlineWrapper = styled.div`
   text-align: center;
 `;
 
-const appearText = keyframes`0% {
+const appearText = keyframes`
+  0% {
     width: 0%;
   }
   100% {
     width: 100%;
   }`;
 
+const blinkCaret = keyframes`
+  0%, 100% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: black;
+  }
+`;
+
+const removeCaret = keyframes`
+  0% {
+    border-right-color: black;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+`;
+
 const Headline = styled.h1`
   font-family: serif;
   font-weight: normal;
   font-weight: normal;
   font-size: 4rem;
-  animation: ${appearText} 1s linear forwards 1;
+  animation: ${appearText} 2s steps(30, end) forwards,
+    ${blinkCaret} 0.75s step-end 2s 4, ${removeCaret} 1s step-end 5s forwards; /* New animation to remove caret */
+
+  border-right: 2px solid black;
+  margin: 0;
   display: inline;
   color: #0d1b2a;
+  display: inline-block;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
 `;
 
 const Subtitle = styled.h2`

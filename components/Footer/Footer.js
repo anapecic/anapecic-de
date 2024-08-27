@@ -3,7 +3,7 @@ import SocialIcon from "../SocialIcon/SocialIcon";
 import Link from "next/link";
 
 const StyledFooterWrapper = styled.div`
-  background: #778da9;
+  background: #415a77;
   color: #e0e1dd;
   width: 100%;
   display: flex;

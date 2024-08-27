@@ -1,6 +1,7 @@
 import AboutMe from "@/components/AboutMe/AboutMe";
 import Header from "@/components/Header/Header";
 import Start from "@/components/Start/Start";
+import Link from "next/link";
 import styled from "styled-components";
 
 const MainWrapper = styled.main`
@@ -15,7 +16,9 @@ const MainWrapper = styled.main`
 export default function Main() {
   return (
     <MainWrapper>
-      <Header />
+      <Link href="/" style={{ color: "#0d1b2a" }}>
+        <Header />
+      </Link>
       <Start />
     </MainWrapper>
   );
